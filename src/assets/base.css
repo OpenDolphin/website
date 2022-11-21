@@ -1,0 +1,82 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --color-primary: #7BD7FF;
+  --color-accent: #10b7ff;
+  --color-secondary: #55CCFF;
+  --color-navbar-item: #24a8e0;
+  
+
+  
+  --color-button: var(--color-accent);
+  --color-button-hover: #0ea1e0;
+  --color-button-active: #0e93cc;
+
+  /* Color scheme specific */
+  --color-background: var(--vt-c-white);
+  --color-header: #ffffffee;
+  --color-button-text: var(--vt-c-white);
+  --color-text: var(--vt-c-text-light-1);
+  --color-link: #10b7ff;
+  --color-link-visited: #10b7ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-header: #222222ee;
+    --color-button-text: var(--vt-c-black);
+    --color-text: var(--vt-c-text-dark-2);
+    --color-link: #10b7ff;
+    --color-link-visited: #7810ff;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-link);
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
