@@ -74,4 +74,12 @@ div.button {
         background-color: var(--color-button-active);
     }
 }
+
+@media screen and (max-width: 450px) {
+    div.button {
+        font-size: 18px;
+        $paddingLR: 10px;
+        padding: 10px $paddingLR 10px $paddingLR;
+    }
+}
 </style>

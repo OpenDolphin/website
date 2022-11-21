@@ -22,7 +22,7 @@ div.md-page {
   margin-right: auto;
 
   div.content {
-
+    margin: 20px;
     $margins: 20px;
     h1 {
       margin-top: $margins;

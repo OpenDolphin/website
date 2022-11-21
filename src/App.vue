@@ -76,4 +76,12 @@ div.content {
   color: var(--color-text);
 }
 
+@media screen and (max-width: 450px) {
+  header {
+    div.logo {
+      width: 70px;
+    }
+  }
+}
+
 </style>
