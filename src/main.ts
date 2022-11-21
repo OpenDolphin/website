@@ -14,7 +14,6 @@ import "@fontsource/nunito-sans/700.css"
 import "@fontsource/nunito-sans/800.css"
 import "@fontsource/nunito-sans/900.css"
 
-
 import './assets/main.css'
 
 const app = createApp(App)

@@ -31,13 +31,13 @@ div.md-page {
     }
 
     h2,h3 {
-      margin-top: $margins/2;
-      margin-bottom: $margins/2;
+      margin-top: calc($margins/2);
+      margin-bottom: calc($margins/2);
     }
     
     p {
-      margin-top: $margins/3;
-      margin-bottom: $margins/3;
+      margin-top: calc($margins/3);
+      margin-bottom: calc($margins/3);
     }
   }
 }

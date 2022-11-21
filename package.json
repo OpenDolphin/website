@@ -18,6 +18,7 @@
     "@fontsource/encode-sans": "^4.5.9",
     "@fontsource/inter": "^4.5.14",
     "@fontsource/nunito-sans": "^4.5.10",
+    "@types/marked": "^4.0.7",
     "marked": "^4.2.3",
     "pinia": "^2.0.23",
     "sass": "^1.56.1",
