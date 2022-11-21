@@ -1,4 +1,4 @@
-# opendolphin-webiste
+# opendolphin-website
 
 This is the source of the OpenDolphin Company website at [about.opendolphin.social](https://about.opendolphin.social/)
 
