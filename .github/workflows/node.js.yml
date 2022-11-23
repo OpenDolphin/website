@@ -19,6 +19,7 @@ jobs:
         cache: 'npm'
     - run: yarn install
     - run: yarn run build
+    - run: cp dist/index.html dist/404.html # GH Pages fix
     - uses: actions/upload-pages-artifact@v1.0.5
       with:
         path: dist/
