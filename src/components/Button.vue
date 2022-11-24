@@ -6,14 +6,22 @@ const props = defineProps({
     type: {
         type: String,
         default: 'primary',
+    },
+    textColor: {
+        type: String,
+        default: 'default'
     }
 })
 
-let classList = {
+let classList : Record<string, boolean> = {
     'button': true,
     'button-primary': props.type == 'primary',
     'button-secondary': props.type == 'secondary',
 }
+
+
+classList['button-text-color-' + props.textColor] = true;
+
 </script>
 
 <template>
@@ -36,6 +44,7 @@ a {
 div.button {
     color: var(--color-button-text);
     border-radius: 10px;
+    box-shadow: 0px 0px 12px #444;
 
     &.button-primary {
         background-color: var(--color-accent);
@@ -44,8 +53,12 @@ div.button {
 
     &.button-secondary {
         color: var(--color-accent);
-        background-color: var(--color-background);
+        background-color: transparent;
         border: 2px solid var(--color-accent);
+    }
+
+    &.button-text-color-white {
+        color: #e7e7e7;
     }
 
     cursor: pointer;
@@ -64,6 +77,10 @@ div.button {
     &.button-secondary:hover {
         color: var(--color-button-text);
         background-color: var(--color-accent);
+
+        &.button-text-color-white {
+            color: #FFF;
+        }
     }
 
     &.button-primary:active {

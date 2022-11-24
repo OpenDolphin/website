@@ -18,6 +18,13 @@ import { RouterLink, RouterView } from 'vue-router'
   <div class="content">
     <RouterView />
   </div>
+
+  <div class="github-logo">
+    <a href="https://github.com/OpenDolphin">
+      <div class="triangle"></div>
+      <img src="/logos/github-logo.svg"/>
+    </a>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -39,8 +46,6 @@ header {
   justify-content: space-between;
 
   height: 80px;
-  margin-top: 10px;
-  margin-bottom: 10px;
   padding: 10px;
   padding-left: $leftRight;
   padding-right: $leftRight;
@@ -69,6 +74,41 @@ header {
       font-weight: 500;
       font-size: 18px;
     }
+  }
+}
+
+div.github-logo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  $size: 100px;
+  width: $size;
+  height: $size;
+
+  a {
+    position: relative;
+    display: flex;
+    width: $size;
+    height: $size;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: calc($size/2);
+      margin: 4px;
+      padding: 4px;
+    }
+  }
+
+  div.triangle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-bottom: $size solid #ffffffdd;
+    border-left: $size solid transparent;
   }
 }
 

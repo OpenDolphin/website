@@ -38,6 +38,9 @@
   --color-text: var(--vt-c-text-light-1);
   --color-link: #10b7ff;
   --color-link-visited: #10b7ff;
+
+
+  --color-triangle-background: var(--color-background);
 }
 
 @media (prefers-color-scheme: dark) {
