@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Button from '@/components/Button.vue';
 
+const slackInvite = 'https://join.slack.com/t/open-dolphin/shared_invite/zt-1kf9nf5ao-_hMCsTsqhau7vGUTbJwXng';
 </script>
 
 <template>
@@ -28,46 +29,51 @@ import Button from '@/components/Button.vue';
 
       <div class="second-section full-height-section">
         <div class="section-inner">
-          <h1>What is OpenDolphin?</h1>
-          <p>OpenDolphin is a project whose goal is to build an open-source social network.</p>
-          <p>
-            Our ambition is to let the project be controlled entirely by the community in all of its parts (ideas, design, coordination, ...)
-            with the objective of becoming the best competitor to the mainstream social networks (e.g: Twitter, Facebook, Instagram).
-          </p>
+          <div class="q-and-a">
+            <h1>What is OpenDolphin?</h1>
+            <p>OpenDolphin is a project whose goal is to build an open-source social network.</p>
+            <p>
+              Our ambition is to let the project be controlled entirely by the community in all of its parts (ideas, design, coordination, ...)
+              with the objective of becoming the best competitor to the mainstream social networks (e.g: Twitter, Facebook, Instagram).
+            </p>
 
-          <h1>How is it different from Mastodon / GNU social?</h1>
-          <p>
-            OpenDolphin aims at being a <i>centralized</i> social network to overcome some of the issues of the decentralized social networks. <br/>
-            Our goal is to keep everything transparent (from the develoment process to the content moderation), and let the people control everything.
-          </p>
+            <h1>How is it different from Mastodon / GNU social?</h1>
+            <p>
+              OpenDolphin aims at being a <i>centralized</i> social network to overcome some of the issues of the decentralized social networks. <br/>
+              Our goal is to keep everything transparent (from the develoment process to the content moderation), and let the people control everything.
+            </p>
 
-          <h1>How do I join?</h1>
-          <p>
-            Introduce yourself in <a href="https://github.com/OpenDolphin/introduction/issues/3">this GitHub issue</a> and/or 
-            <a href="https://join.slack.com/t/open-dolphin/shared_invite/zt-1kf9nf5ao-_hMCsTsqhau7vGUTbJwXng">join our Slack instance</a>!
-          </p>
+            <h1>How do I participate in the project?</h1>
+            <p>
+              Introduce yourself in <a href="https://github.com/OpenDolphin/introduction/issues/3">this GitHub issue</a> and/or 
+              <a :href="slackInvite">join our Slack instance</a>!
+              <a :href="slackInvite" target="_blank">
+                <img src="/logos/slack-logo.svg" class="slack-logo"/>
+              </a>
+            </p>
 
-          <h1>Do you have a GitHub organization?</h1>
-          <p><a href="https://github.com/OpenDolphin" target="_blank">Of course</a>, and you are invited to collaborate.</p>
+            <h1>Do you have a GitHub organization?</h1>
+            <p><a href="https://github.com/OpenDolphin" target="_blank">Of course</a>, and you are invited to collaborate.</p>
 
-          <h1>Do you have a roadmap?</h1>
-          <p>
-            <a href="https://github.com/orgs/OpenDolphin/projects/1" target="_blank">We're building one</a>, 
-            although we need more people to join in order to define the product better and choose how we want to build the product.
-          </p>
+            <h1>Do you have a roadmap?</h1>
+            <p>
+              <a href="https://github.com/orgs/OpenDolphin/projects/1" target="_blank">We're building one</a>, 
+              although we need more people to join in order to define the product better and choose how we want to build the product.
+            </p>
 
-          <h1>Why the dolphin? 🐬</h1>
-          <p>
-            Because they're smart and cute - but as with everything in this project, if you don't like it / have a better idea for the brand
-            (for example, a different name, a different logo, ...) you can help us out by contributing to 
-            <a href="https://github.com/OpenDolphin/brand" target="_blank">this repository</a>.
-          </p>
+            <h1>Why the dolphin? 🐬</h1>
+            <p>
+              Because they're smart and cute - but as with everything in this project, if you don't like it / have a better idea for the brand
+              (for example, a different name, a different logo, ...) you can help us out by contributing to 
+              <a href="https://github.com/OpenDolphin/brand" target="_blank">this repository</a>.
+            </p>
 
-          <h1>Your project name sucks</h1>
-          <p>
-            Thanks, it is anyways temporary - until we (you?) find a better name! <br/>
-            Head over to <a href="https://github.com/OpenDolphin/brand" target="_blank">OpenDolphin/brand</a> and help us find the best name!
-          </p>
+            <p>You don't like the name? It's anyways temporary - help us find a better one in the 
+              <a href="https://github.com/OpenDolphin/brand" target="_blank">brand repository</a></p>
+          </div>
+          <div class="early-mockups">
+            <img src="https://github.com/OpenDolphin/product-design/blob/master/app/prototype/img/profile-view.png?raw=true"/>
+          </div>
         </div>
       </div>
     </div>
@@ -163,14 +169,49 @@ div.home {
       margin-top: 80px;
     }
   }
+
+  div.second-section {
+    h1 {
+      margin-bottom: 12px;
+      margin-top: 24px;
+    }
+
+    div.section-inner {
+      display: flex;
+      flex-direction: row;
+      max-width: 1600px;
+      column-gap: 25px;
+      row-gap: 15px;
+      object-fit: cover;
+
+      div.early-mockups {
+        width: 50vw;
+        max-width: 400px;
+        img {
+          border-radius: 5px;
+          width: 100%;
+        }
+      }
+
+      img.slack-logo {
+        display: block;
+        margin-top: 8px;
+        border-radius: 5px;
+        height: 40px;
+        background-color: #FFF;
+        padding: 8px;
+      }
+    }
+  }
 }
 
-div.second-section {
-  h1 {
-    margin-bottom: 12px;
-    margin-top: 24px;
-  }
-  p {
+@media screen and (max-width: 900px) {
+  div.home {
+    div.second-section {
+      div.section-inner {
+        flex-direction: column;
+      }
+    }
   }
 }
 </style>
