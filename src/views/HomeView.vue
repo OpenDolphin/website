@@ -52,6 +52,11 @@ const slackInvite = 'https://join.slack.com/t/open-dolphin/shared_invite/zt-1kf9
               </a>
             </p>
 
+            <h1>Can I have a sneak peek of what's the UI like?</h1>
+            <p>
+              Sure! Head over to <a href="https://app.opendolphin.social/">app.opendolphin.social</a> and enjoy!
+            </p>
+
             <h1>Do you have a GitHub organization?</h1>
             <p><a href="https://github.com/OpenDolphin" target="_blank">Of course</a>, and you are invited to collaborate.</p>
 
