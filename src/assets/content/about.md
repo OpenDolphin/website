@@ -78,10 +78,10 @@ We believe that people should be in charge of everything related to this project
 Our belief is that _anyone_ should be able to give their contribution and contribute to shaping the product.
 In case of conflicting opinions, we collect opinions and arguments, and then we vote, in a democratic way.
 
-## Retribution
+## Compensation
 
-Everyone needs to be retributed for their part on the project in function of their effort put to bring the project to life.
-The revenue of the platform will be distributed among all contributors, so that everyone benefits from the work they put into this project.
+Everyone needs to be compensated for their part on the project in function of their effort put to bring the project to life.
+The revenue of the platform should be distributed among all contributors, so that everyone benefits from the work they put into this project.
   
 This effectively means that the success of the platform will bring more money to the people who contributed.
 
