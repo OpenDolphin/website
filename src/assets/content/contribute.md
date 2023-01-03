@@ -7,7 +7,7 @@ You don't need to be a software engineer or a designer to contribute. We welcome
 
 ## Get in touch
 
-Our [Slack instance](https://join.slack.com/t/open-dolphin/shared_invite/zt-1kf9nf5ao-_hMCsTsqhau7vGUTbJwXng) can be used
+Our [Slack instance](https://join.slack.com/t/open-dolphin/shared_invite/zt-1moz005y9-x0LwnR7Dlvwlmi1jOrkFug) can be used
 to get in touch with the community, share your ideas and learn more about what we're working on.  
   
 [Here](https://github.com/OpenDolphin/introduction/issues/3) we're collecting a list of users who are committed to the project, it's a

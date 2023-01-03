@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Button from '@/components/Button.vue';
 
-const slackInvite = 'https://join.slack.com/t/open-dolphin/shared_invite/zt-1kf9nf5ao-_hMCsTsqhau7vGUTbJwXng';
+const slackInvite = 'https://join.slack.com/t/open-dolphin/shared_invite/zt-1moz005y9-x0LwnR7Dlvwlmi1jOrkFug;
 </script>
 
 <template>
