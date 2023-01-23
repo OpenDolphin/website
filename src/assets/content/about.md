@@ -14,6 +14,23 @@ We want to make it centralized for the following reasons:
 - Enhance post authenticity checks (via a [PKI](https://en.wikipedia.org/wiki/Public_key_infrastructure)?)
 - ...
 
+# FAQs
+
+## Where is the demo?
+
+[app.opendolphin.social](https://app.opendolphin.social/) hosts a live demo of the product.
+
+## Where is the code?
+
+On our [GitHub organization](https://github.com/OpenDolphin). PRs / contribution are welcome!
+
+## How do I join?
+
+Join us on [Slack](https://join.slack.com/t/open-dolphin/shared_invite/zt-1moz005y9-x0LwnR7Dlvwlmi1jOrkFug) / contribute on 
+[GitHub](https://github.com/OpenDolphin).
+
+
+
 # The Idea
 
 We want to build a new social network, similar to the existing ones (Facebook, Instagram and Twitter) but
@@ -52,9 +69,16 @@ Of course the platform will not be a free-for-all, as we plan to remove:
     - Child Porn
     - Copyrighted Content
     - ...
+- Hate speech (TODO: define ways to do that)
+- Harmful content
 
-We might decide to not remove hate speech (?), but the community should definitely have a way to
-de-prioritize this form of content on the platform. 
+Since everyone has different ideas on what a social network should (and should not) contain, we'll most probably tackle some
+disturbing content with de-prioritization and filtering. 
+In this way we will still be able to show certain kind of contents to the people that are willing to see them (opt-in).  
+This might allow us to effectively show posts (still complying with the local laws) that might hurt the sensibility of
+certain users ([see for example this page](https://en.wikipedia.org/wiki/Internet_censorship#Common_targets)).  
+Since one of the main goals is anyway to keep a friendly and welcoming environment, we'd have to come up together with strategies on how
+to make sure to have a trade off between censorship and unpleasant content.
 
 ## Company
 
