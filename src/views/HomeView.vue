@@ -15,7 +15,7 @@ const slackInvite = 'https://join.slack.com/t/open-dolphin/shared_invite/zt-1moz
         <div class="main-cta">
           <h1>Truly Open Social Network</h1>
           <p class="quick-desc">
-            Centralized, free and open-source social network 
+            Free and open-source social network 
             built with and steered by the community.
           </p>
         </div>
@@ -37,6 +37,14 @@ const slackInvite = 'https://join.slack.com/t/open-dolphin/shared_invite/zt-1moz
               with the objective of becoming the best competitor to the mainstream social networks (e.g: Twitter, Facebook, Instagram).
             </p>
 
+            <h1>Where is the demo?</h1>
+            <p>
+              Visit <a href="https://app.opendolphin.social/">app.opendolphin.social</a> and enjoy the live demo. <br/>
+              We're still building the product and we'd like to have your contribution / feedback. <br/>
+              Since this is a community effort, the product will improve over time and you'll be soon able to join the product as
+              an user.
+            </p>
+
             <h1>How is it different from Mastodon / GNU social?</h1>
             <p>
               OpenDolphin aims at being a <i>centralized</i> social network to overcome some of the issues of the decentralized social networks. <br/>
@@ -50,11 +58,8 @@ const slackInvite = 'https://join.slack.com/t/open-dolphin/shared_invite/zt-1moz
               <a :href="slackInvite" target="_blank">
                 <img src="/logos/slack-logo.svg" class="slack-logo"/>
               </a>
-            </p>
-
-            <h1>Can I have a sneak peek of what's the UI like?</h1>
-            <p>
-              Sure! Head over to <a href="https://app.opendolphin.social/">app.opendolphin.social</a> and enjoy!
+              <br/>
+              You can also share this website with anyone you might think will be able to contribute!
             </p>
 
             <h1>Do you have a GitHub organization?</h1>

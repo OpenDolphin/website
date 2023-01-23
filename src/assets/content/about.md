@@ -1,7 +1,7 @@
 # What is OpenDolphin?
 
 OpenDolphin is a project whose goal is to build a community-owned, privacy-first and centralized social network for everyone. 
-A place where users come first and the community is invited to participate in creating a better platform for everyone.
+A place where users come first, and the community is invited to participate in creating a better platform for everyone.
 We want to build a social network that is not only private and secure, but also: fair, not-for-profit, democratic and censorship resistant.
   
 
